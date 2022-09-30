@@ -1,0 +1,20 @@
+{
+  "name": "api-node-with-clean-architecture",
+  "version": "1.0.0",
+  "description": "After a long time of study I decided to adopt the concepts of clean architecture for my projects, and this is a project where this knowledge obtained so far will be reflected, TDD and clean architecture will be included in it. The concepts adopted here came directly from the book Clean Architecture by Rober C. Martin.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthLima/api-node-with-clean-architecture.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnthLima/api-node-with-clean-architecture/issues"
+  },
+  "homepage": "https://github.com/AnthLima/api-node-with-clean-architecture#readme"
+}
