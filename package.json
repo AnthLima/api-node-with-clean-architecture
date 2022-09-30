@@ -17,7 +17,20 @@
     "url": "https://github.com/AnthLima/api-node-with-clean-architecture/issues"
   },
   "homepage": "https://github.com/AnthLima/api-node-with-clean-architecture#readme",
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "standard": "^17.0.0"
   }
 }
