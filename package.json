@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "standard": "standard",
-    "standard::fix": "standard --fix"
+    "standard::fix": "standard --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
