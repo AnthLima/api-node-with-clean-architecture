@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AnthLima/api-node-with-clean-architecture/issues"
   },
-  "homepage": "https://github.com/AnthLima/api-node-with-clean-architecture#readme"
+  "homepage": "https://github.com/AnthLima/api-node-with-clean-architecture#readme",
+  "devDependencies": {
+    "standard": "^17.0.0"
+  }
 }
