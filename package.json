@@ -9,6 +9,9 @@
     "standard::fix": "standard --fix",
     "prepare": "husky install"
   },
+  "standard" : {
+    "env": ["jest"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AnthLima/api-node-with-clean-architecture.git"
