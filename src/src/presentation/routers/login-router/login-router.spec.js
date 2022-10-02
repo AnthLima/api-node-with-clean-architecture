@@ -3,12 +3,15 @@ class LoginRouter {
     if (!httpRequest || !httpRequest.body) {
       return HttpResponse.serverError()
     }
+
     const { email, password } = httpRequest.body
+
     if (!email) {
       return HttpResponse.badRequest('email')
     }
+
     if (!password) {
-      return HttpResponse.badRequest('email')
+      return HttpResponse.badRequest('password')
     }
   }
 }
@@ -52,11 +55,12 @@ describe('Login Router', () => {
     const sut = new LoginRouter()
     const httpRequest = {
       body: {
-        email: 'anyemail@email.com'
+        email: 'any_email'
       }
     }
     const httpResponse = sut.route(httpRequest)
     expect(httpResponse.statusCode).toBe(400)
+    expect(httpResponse.body).toEqual(new MissingParamError('password'))
   })
 
   test('Should return 500 if httpRequest not found', () => {
